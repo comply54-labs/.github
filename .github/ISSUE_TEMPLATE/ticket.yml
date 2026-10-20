@@ -1,0 +1,82 @@
+name: Ticket
+description: Template standard Comply54 — un ticket sans template complet n'est pas Ready.
+title: "[Ticket] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Sans template complet = pas Ready.**
+        Le titre doit décrire le résultat attendu (ex. « Afficher les fronts validés dans le dashboard »).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Contexte et besoin. Pourquoi ce ticket existe, quel problème il résout.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d'acceptation
+      description: Réalisables, mesurables et concrets. Chaque critère doit pouvoir être vérifié par oui / non.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: how-to-test
+    attributes:
+      label: How to test
+      description: Étapes pour vérifier que les critères d'acceptation sont remplis (environnement, données, scénario).
+      placeholder: |
+        1. Aller sur …
+        2. Faire …
+        3. Constater que …
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimation
+    attributes:
+      label: Estimation
+      description: Effort estimé (story points).
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "5"
+        - "8"
+        - "13"
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repo
+      description: Repo(s) concerné(s) par le changement.
+      placeholder: comply54-labs/cms-front-end
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: Branche
+      description: "Convention : <numéro-issue>-<nom-court>, dérivé du titre."
+      placeholder: 87-validated-front-visibility
+    validations:
+      required: true
+
+  - type: input
+    id: assignee
+    attributes:
+      label: Assigné
+      description: Handle GitHub de la personne responsable (pensez aussi à l'assigner via le champ Assignees).
+      placeholder: "@handle"
+    validations:
+      required: true
