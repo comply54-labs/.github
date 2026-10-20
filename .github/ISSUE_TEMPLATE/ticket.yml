@@ -43,14 +43,14 @@ body:
     id: estimation
     attributes:
       label: Estimation
-      description: Effort estimé (story points).
+      description: "Ticket court = 2h. Ticket tâche = en jours (1 jour = 4h de travail, temps partiel)."
       options:
-        - "1"
-        - "2"
-        - "3"
-        - "5"
-        - "8"
-        - "13"
+        - "2h (ticket court)"
+        - "1 jour (4h)"
+        - "2 jours (8h)"
+        - "3 jours (12h)"
+        - "4 jours (16h)"
+        - "5 jours (20h)"
     validations:
       required: true
 
