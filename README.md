@@ -10,6 +10,10 @@ consistent across repos — change it once, it applies everywhere.
 
 - [`.github/pull_request_template.md`](.github/pull_request_template.md) — the
   default pull request template, applied to any repo without its own.
+- [`.github/ISSUE_TEMPLATE/ticket.yml`](.github/ISSUE_TEMPLATE/ticket.yml) — the
+  default issue form. Every ticket must have: description, acceptance criteria
+  (achievable, measurable, concrete), how to test, estimation, repo, branch and
+  assignee. **An incomplete ticket is not Ready.** Blank issues are disabled.
 
 ## Conventions
 
